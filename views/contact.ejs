@@ -6,7 +6,30 @@
   </head>
   <body>
     <%- include("partials/navigation.ejs") %> 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+      <div class="card bg-dark text-center text-white">
+        <div class="card-header">
+          <h3>Contact me</h3>
+        </div>
+        <div class="card-body text-start">
+          <form action="">
+
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" placeholder="Email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label for="Message">Message</label>
+              <textarea class="form-control" type="text" placeholder="Add message here..." rows="3"></textarea>
+            </div>
+
+            <button class="btn btn-primary col-12">SEND</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include("partials/footer.ejs") %> 
   </body>
 </html>
