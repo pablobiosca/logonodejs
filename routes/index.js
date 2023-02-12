@@ -10,6 +10,15 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });
 
+router.post('/recoger', function(req, res, next) {
+  console.log("hola")
+  
+  const { email,mensaje } = req.body
+
+  console.log(email,mensaje)
+
+});
+
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About' });
 });
